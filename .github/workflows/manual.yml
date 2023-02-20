@@ -24,4 +24,5 @@ jobs:
              image: helloworld:1.0
              shell: bash
              run: |  
-               echo "Hello World"
+               pwd
+               ls
