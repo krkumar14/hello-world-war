@@ -26,5 +26,7 @@ jobs:
              run: |  
                pwd
                ls
-               ls webapps
+               jar -xvf webapps/hello-world-war-1.0.0.war
+               
+               curl localhost:8080/hello-world-war-1.0.0
                
