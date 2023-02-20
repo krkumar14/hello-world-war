@@ -20,5 +20,6 @@ jobs:
           
           
           docker run -d -p 8080:8080 helloworld:1.0 catalina.sh run
-          
-          curl -v http://localhost:8080  
+          docker ps
+         
+          curl -v http://localhost:8080/hello-world-war-1.0.0  
