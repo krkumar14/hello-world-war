@@ -28,6 +28,6 @@ jobs:
                ls
                jar -xvf webapps/hello-world-war-1.0.0.war
                ls webapps
-               bin/catalina.sh run
+               -d bin/catalina.sh run
                curl localhost:8080
                
