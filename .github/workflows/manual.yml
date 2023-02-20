@@ -26,8 +26,9 @@ jobs:
              run: |  
                pwd
                ls
-               jar -xvf webapps/hello-world-war-1.0.0.war
+               ps -ef | grep java
+              
                ls webapps
-               -d bin/catalina.sh run
+               
                curl localhost:8080
                
