@@ -13,13 +13,17 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
+        
      
       - name: Build and push
         run: |
           docker build . --file Dockerfile --tag=helloworld:1.0
           
-          
-          docker run -d -p 8080:8080 helloworld:1.0 catalina.sh run
-          docker ps
+      - uses: addnab/docker-run-action@v3
+        with:
+             image: helloworld:1.0
+             shell: bash
+             run: |  
+               docker run -d -p 8080:8080 helloworld:1.0 catalina.sh run
+               docker ps
          
-          curl -v http://localhost:8080/hello-world-war-1.0.0  
