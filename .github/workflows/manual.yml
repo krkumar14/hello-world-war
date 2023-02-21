@@ -27,7 +27,7 @@ jobs:
     runs-on: ubuntu-latest
     container: ubuntu
     services:
-      hello-world:
+      helloworld:
         image: helloworld:1.0
         ports:
           - 8080:8080
