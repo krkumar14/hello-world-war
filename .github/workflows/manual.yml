@@ -33,7 +33,10 @@ jobs:
          - 8080:8080
     steps:
       - name: curl_image
-        run: curl localhost:8080
+        run: |
+          pwd
+          ls webapps
+          curl localhost:8080
          
          
         
