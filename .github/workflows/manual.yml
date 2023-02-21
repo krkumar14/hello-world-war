@@ -2,9 +2,7 @@ name: Manual workflow
 
 
 on:
-# push:
- #   branches:
- #   - main
+
   workflow_dispatch:                                                                                                                 
 
 jobs:
@@ -28,14 +26,14 @@ jobs:
     container: ubuntu
     services:
       helloworld:
-        image: helloworld:1.0
+        image: krkumar1405.jfrog.io/docker-trial/helloworld
         ports:
           - 8080:8080
-
     steps:
        - run: apt-get update; apt-get install curl -y
-       - run: curl hello-world:8080 > curl_result_docker
-       - run: cat curl_result_docker   
+       - run: curl helloworld:8080 > curl_result_docker
+       - run: cat curl_result_docker 
+     
 	  
 	  
                
