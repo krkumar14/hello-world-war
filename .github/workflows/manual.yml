@@ -34,8 +34,7 @@ jobs:
     steps:
       - name: curl_image
         run: |
-          pwd
-          ls webapps
+          
           curl localhost:8080
          
          
