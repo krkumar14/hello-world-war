@@ -30,7 +30,7 @@ jobs:
         password: Harshu@11
         
       ports:
-         - 8080:8080
+         - 8080
     steps:
       - name: curl_image
         run: |
