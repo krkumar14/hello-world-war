@@ -25,10 +25,9 @@ jobs:
              shell: bash
              run: |  
                pwd
-               ls
                
               
                ls webapps
                
-               curl localhost:8080
+              
                
