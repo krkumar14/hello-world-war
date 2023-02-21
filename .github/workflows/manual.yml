@@ -23,7 +23,21 @@ jobs:
           docker push krkumar1405.jfrog.io/docker-trial/helloworld
           #docker run -d -p 8080:8080 helloworld:1.0
          
- 
+  web_app_defn:
+    runs-on: ubuntu-latest
+    container: ubuntu
+    services:
+      hello-world:
+        image: helloworld:1.0
+        ports:
+          - 8080:8080
+
+    steps:
+      - run: apt-get update; apt-get install curl -y
+      - run: curl hello-world:8080 > curl_result_docker
+      - run: cat curl_result_docker   
+	  
+	  
                
               
               
