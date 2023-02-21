@@ -32,12 +32,4 @@ jobs:
     steps:
        - run: apt-get update; apt-get install curl -y
        - run: curl helloworld:8080 > curl_result_docker
-       - run: cat curl_result_docker 
-     
-	  
-	  
-               
-              
-              
-              
-               
+       - run: cat curl_result_docker
