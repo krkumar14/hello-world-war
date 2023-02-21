@@ -35,7 +35,7 @@ jobs:
       - name: curl_image
         run: |
           
-          curl localhost:8080
+          curl -v http://127.0.0.1:8080
          
          
         
