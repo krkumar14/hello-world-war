@@ -27,8 +27,13 @@ jobs:
     services:
       helloworld:
         image: krkumar1405.jfrog.io/docker-trial/helloworld
+        env:
+          registry: krkumar1405.jfrog.io
+          username: rajuharshu@gmail.com
+          password: Harshu@11
         ports:
           - 8080:8080
+    
     steps:
        - run: apt-get update; apt-get install curl -y
        - run: curl helloworld:8080 > curl_result_docker
