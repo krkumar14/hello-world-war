@@ -34,6 +34,7 @@ jobs:
     steps:
       - name: curl_image
         run: |
+          ls /usr/local/tomcat/webapps
           curl http://localhost:8080
          
          
