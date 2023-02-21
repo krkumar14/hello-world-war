@@ -32,7 +32,7 @@ jobs:
       ports:
          - 8080:8080
     steps:
-      - run: apt-get update; apt-get install curl -y
+      
       - run: curl localhost:8080 > curl_result_docker
       - run: cat curl_result_docker     
          
