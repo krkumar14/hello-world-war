@@ -34,8 +34,7 @@ jobs:
     steps:
       - name: curl_image
         run: |
-          netstat -anp
-          curl -v http://127.0.0.1:8080
+          curl http://localhost:8080
          
          
         
