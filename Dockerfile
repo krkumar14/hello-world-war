@@ -12,4 +12,4 @@ RUN export PATH=$PATH:/usr/local/tomcat/bin
 #RUN unzip /usr/local/tomcat/webapps/helloworld.war
 
 RUN pwd
-CMD [“catalina.sh”,“run”]
+CMD [“catalina.sh”,“start”]
