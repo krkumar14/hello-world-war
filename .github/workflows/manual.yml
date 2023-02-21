@@ -34,7 +34,7 @@ jobs:
     steps:
       - name: curl_image
         run: |
-          #nohup sh -c /usr/local/tomcat/bin/catalina.sh run &
+          nohup sh /usr/local/tomcat/bin/catalina.sh run &
           sleep 30
           ls /usr/local/tomcat/webapps
           curl http://localhost:8080
